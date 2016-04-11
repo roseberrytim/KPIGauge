@@ -1,0 +1,10 @@
+Series - KPIGauge
+- Updated to be capatible with ExtJs 4.2.0
+- Updated needle configuration to allow as optional
+- Apply onAnimate method to the needle, needlePivot, and value sprites to correctly redraw location on animated resize of chart.
+
+Axis - KPIGauge
+- Update "drawAxis" method to allow for axis to inherit the applied chart theme, which by default is "Base"
+- Update "drawLabel" method to allow for user customized/theme styling of labels. Default library method hard codes color, font.
+	- set "position: 'left'" in order to allow the axis to inherit the applied chart theme. Defaults to the "Base" theme.
+	- if you define "position: 'gauge'" then it will use default colors and font as defined in Ext.draw.Surface
